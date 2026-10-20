@@ -1,0 +1,2039 @@
+[
+  {
+    "id": "mailroom",
+    "title": {
+      "en": "The invoice at 08:17",
+      "ms": "Invois pada 08:17"
+    },
+    "level": "Foundation",
+    "source": "Mail gateway + proxy",
+    "minutes": 20,
+    "brief": {
+      "en": "Finance reported an unexpected sign-in after an invoice email. Trace the recipient, credential destination and first confirmed sign-in. All times are UTC. A click alone is not proof of compromise.",
+      "ms": "Kewangan melaporkan log masuk luar jangka selepas e-mel invois. Jejaki penerima, destinasi kelayakan dan log masuk pertama yang disahkan. Semua masa dalam UTC. Klik sahaja bukan bukti pencerobohan."
+    },
+    "logs": [
+      {
+        "id": "MAI-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "MAI-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "MAI-001",
+        "timestamp": "2026-09-14T08:17:10Z",
+        "host": "MAIL-01",
+        "event": "mail_delivered",
+        "user": "nur.aisyah",
+        "source_ip": "192.0.2.44",
+        "detail": "message=MSG-104; from=accounts@vendor-invoice.example; attachment=invoice.html"
+      },
+      {
+        "id": "MAI-002",
+        "timestamp": "2026-09-14T08:19:02Z",
+        "host": "WS-FIN-07",
+        "event": "proxy_get",
+        "user": "nur.aisyah",
+        "source_ip": "10.18.7.14",
+        "detail": "url=https://invoice-review.example/login; message=MSG-104; status=200"
+      },
+      {
+        "id": "MAI-003",
+        "timestamp": "2026-09-14T08:19:22Z",
+        "host": "WS-FIN-07",
+        "event": "proxy_post",
+        "user": "nur.aisyah",
+        "source_ip": "10.18.7.14",
+        "detail": "host=invoice-review.example; path=/session; bytes_out=402; status=302"
+      },
+      {
+        "id": "MAI-004",
+        "timestamp": "2026-09-14T08:21:09Z",
+        "host": "IDP-01",
+        "event": "login_success",
+        "user": "nur.aisyah",
+        "source_ip": "198.51.100.77",
+        "detail": "MFA=legacy_bypass; device=unknown; session=SID-72"
+      },
+      {
+        "id": "MAI-005",
+        "timestamp": "2026-09-14T08:22:15Z",
+        "host": "MAIL-01",
+        "event": "rule_created",
+        "user": "nur.aisyah",
+        "source_ip": "198.51.100.77",
+        "detail": "rule=invoice-archive; move=DeletedItems; session=SID-72"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which account received MSG-104?",
+          "ms": "Akaun manakah menerima MSG-104?"
+        },
+        "answers": [
+          "nur.aisyah"
+        ],
+        "explanation": {
+          "en": "Mail delivery records nur.aisyah; proxy and sign-in records correlate the same account.",
+          "ms": "Rekod penghantaran menunjukkan nur.aisyah; rekod proksi dan log masuk berkaitan akaun yang sama."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which domain received the credential POST?",
+          "ms": "Domain manakah menerima POST kelayakan?"
+        },
+        "answers": [
+          "invoice-review.example"
+        ],
+        "explanation": {
+          "en": "The proxy_post entry names the destination host.",
+          "ms": "Entri proxy_post menyatakan hos destinasi."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "At what UTC time was the first suspicious successful sign-in? Use HH:MM:SS.",
+          "ms": "Pada masa UTC apakah log masuk berjaya yang mencurigakan pertama? Gunakan HH:MM:SS."
+        },
+        "answers": [
+          "08:21:09"
+        ],
+        "explanation": {
+          "en": "IDP-01 confirms success from an unfamiliar IP at 08:21:09.",
+          "ms": "IDP-01 mengesahkan kejayaan dari IP asing pada 08:21:09."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Follow message MSG-104 from mail delivery to the proxy.",
+        "ms": "Ikuti mesej MSG-104 daripada penghantaran e-mel ke proksi."
+      },
+      {
+        "en": "The first confirmed sign-in is login_success, not proxy_post.",
+        "ms": "Log masuk pertama yang disahkan ialah login_success, bukan proxy_post."
+      }
+    ],
+    "writeup": {
+      "en": "A credential submission is followed by a successful legacy-auth sign-in and an inbox rule. Revoke sessions, reset credentials, inspect mailbox rules and require modern MFA. Logs show account misuse; they do not identify the human actor.",
+      "ms": "Penyerahan kelayakan diikuti log masuk pengesahan legasi dan peraturan peti masuk. Batalkan sesi, tetapkan semula kelayakan, periksa peraturan dan wajibkan MFA moden. Log menunjukkan penyalahgunaan akaun, bukan identiti pelaku."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "spray",
+    "title": {
+      "en": "One password, many doors",
+      "ms": "Satu kata laluan, banyak pintu"
+    },
+    "level": "Foundation",
+    "source": "Identity provider",
+    "minutes": 20,
+    "brief": {
+      "en": "Helpdesk sees a cluster of failed sign-ins. Distinguish a password spray from a single user mistyping, then identify the successful account.",
+      "ms": "Meja bantuan melihat kelompok log masuk gagal. Bezakan semburan kata laluan daripada kesilapan seorang pengguna, kemudian kenal pasti akaun yang berjaya."
+    },
+    "logs": [
+      {
+        "id": "SPR-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "SPR-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "SPR-001",
+        "timestamp": "2026-09-14T09:01:01Z",
+        "host": "IDP-01",
+        "event": "login_failed",
+        "user": "azlan",
+        "source_ip": "198.51.100.18",
+        "detail": "reason=invalid_password; client=legacy-imap"
+      },
+      {
+        "id": "SPR-002",
+        "timestamp": "2026-09-14T09:01:04Z",
+        "host": "IDP-01",
+        "event": "login_failed",
+        "user": "mei.ling",
+        "source_ip": "198.51.100.18",
+        "detail": "reason=invalid_password; client=legacy-imap"
+      },
+      {
+        "id": "SPR-003",
+        "timestamp": "2026-09-14T09:01:08Z",
+        "host": "IDP-01",
+        "event": "login_failed",
+        "user": "ravi",
+        "source_ip": "198.51.100.18",
+        "detail": "reason=invalid_password; client=legacy-imap"
+      },
+      {
+        "id": "SPR-004",
+        "timestamp": "2026-09-14T09:01:11Z",
+        "host": "IDP-01",
+        "event": "login_success",
+        "user": "svc.print",
+        "source_ip": "198.51.100.18",
+        "detail": "client=legacy-imap; MFA=not_enrolled"
+      },
+      {
+        "id": "SPR-005",
+        "timestamp": "2026-09-14T09:02:00Z",
+        "host": "IDP-01",
+        "event": "login_failed",
+        "user": "azlan",
+        "source_ip": "10.18.4.5",
+        "detail": "reason=invalid_password; client=browser"
+      },
+      {
+        "id": "SPR-006",
+        "timestamp": "2026-09-14T09:02:10Z",
+        "host": "IDP-01",
+        "event": "login_success",
+        "user": "azlan",
+        "source_ip": "10.18.4.5",
+        "detail": "client=browser; MFA=passed"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which source IP attempted multiple accounts?",
+          "ms": "IP sumber manakah mencuba beberapa akaun?"
+        },
+        "answers": [
+          "198.51.100.18"
+        ],
+        "explanation": {
+          "en": "The same external IP attempts three distinct users, then succeeds on svc.print.",
+          "ms": "IP luar yang sama mencuba tiga pengguna, kemudian berjaya pada svc.print."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which account was compromised?",
+          "ms": "Akaun manakah diceroboh?"
+        },
+        "answers": [
+          "svc.print"
+        ],
+        "explanation": {
+          "en": "login_success for svc.print follows the cluster.",
+          "ms": "login_success untuk svc.print menyusuli kelompok tersebut."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "Which client allowed the successful suspicious login?",
+          "ms": "Klien manakah membenarkan log masuk mencurigakan itu?"
+        },
+        "answers": [
+          "legacy-imap"
+        ],
+        "explanation": {
+          "en": "The successful event names legacy-imap and MFA not enrolled.",
+          "ms": "Peristiwa berjaya menyatakan legacy-imap dan MFA belum didaftarkan."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Group failed logins by source IP and count distinct users.",
+        "ms": "Kumpulkan kegagalan mengikut IP sumber dan kira pengguna berbeza."
+      },
+      {
+        "en": "A service account succeeds from the same IP as the failures.",
+        "ms": "Akaun perkhidmatan berjaya dari IP yang sama dengan kegagalan."
+      }
+    ],
+    "writeup": {
+      "en": "The multi-account pattern supports password spraying. Disable legacy authentication, rotate svc.print credentials and review service dependencies before disabling it. The internal azlan retry is a useful benign contrast.",
+      "ms": "Corak pelbagai akaun menyokong semburan kata laluan. Nyahaktif pengesahan legasi, tukar kelayakan svc.print dan semak pergantungan perkhidmatan. Percubaan semula azlan dari rangkaian dalaman ialah aktiviti biasa."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "lateral",
+    "title": {
+      "en": "A service crosses the network",
+      "ms": "Perkhidmatan merentas rangkaian"
+    },
+    "level": "Intermediate",
+    "source": "Windows security + service events",
+    "minutes": 30,
+    "brief": {
+      "en": "An administrator account appears on a file server outside its maintenance window. Correlate the network logon, service installation and source host.",
+      "ms": "Akaun pentadbir muncul pada pelayan fail di luar waktu penyelenggaraan. Hubungkan log masuk rangkaian, pemasangan perkhidmatan dan hos sumber."
+    },
+    "logs": [
+      {
+        "id": "LAT-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "LAT-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "LAT-001",
+        "timestamp": "2026-09-14T10:02:13Z",
+        "host": "WS-FIN-07",
+        "event": "4648",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "ExplicitCredentials; target=FS-02; process=remote-service-client.exe"
+      },
+      {
+        "id": "LAT-002",
+        "timestamp": "2026-09-14T10:02:14Z",
+        "host": "FS-02",
+        "event": "4624",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "LogonType=3; LogonId=0x7ae1; authentication=NTLM"
+      },
+      {
+        "id": "LAT-003",
+        "timestamp": "2026-09-14T10:02:18Z",
+        "host": "FS-02",
+        "event": "4672",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "SpecialPrivileges; LogonId=0x7ae1"
+      },
+      {
+        "id": "LAT-004",
+        "timestamp": "2026-09-14T10:02:21Z",
+        "host": "FS-02",
+        "event": "7045",
+        "user": "SYSTEM",
+        "source_ip": "10.18.7.14",
+        "detail": "ServiceName=WinCacheSync; ImagePath=C:\\ProgramData\\cache-sync.exe; initiator=svc.backup"
+      },
+      {
+        "id": "LAT-005",
+        "timestamp": "2026-09-14T10:02:23Z",
+        "host": "FS-02",
+        "event": "1",
+        "user": "SYSTEM",
+        "source_ip": "10.18.7.14",
+        "detail": "parent=services.exe; image=cache-sync.exe; sha256=synthetic-not-a-real-binary"
+      },
+      {
+        "id": "LAT-006",
+        "timestamp": "2026-09-14T10:04:00Z",
+        "host": "FS-02",
+        "event": "5145",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "Share=Finance; path=payroll.csv; access=read"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which account performed the network logon?",
+          "ms": "Akaun manakah melakukan log masuk rangkaian?"
+        },
+        "answers": [
+          "svc.backup"
+        ],
+        "explanation": {
+          "en": "4624 LogonType=3 records svc.backup from WS-FIN-07.",
+          "ms": "4624 LogonType=3 merekodkan svc.backup dari WS-FIN-07."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which service was installed?",
+          "ms": "Perkhidmatan manakah dipasang?"
+        },
+        "answers": [
+          "WinCacheSync"
+        ],
+        "explanation": {
+          "en": "Event 7045 supplies ServiceName=WinCacheSync.",
+          "ms": "Peristiwa 7045 menyatakan ServiceName=WinCacheSync."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "When did the network logon occur (HH:MM:SS UTC)?",
+          "ms": "Bilakah log masuk rangkaian berlaku (HH:MM:SS UTC)?"
+        },
+        "answers": [
+          "10:02:14"
+        ],
+        "explanation": {
+          "en": "Correlate 0x7ae1 between the logon and special privileges events.",
+          "ms": "Hubungkan 0x7ae1 antara peristiwa log masuk dan keistimewaan."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Find a 4624 with LogonType=3 and correlate its LogonId.",
+        "ms": "Cari 4624 dengan LogonType=3 dan hubungkan LogonId."
+      },
+      {
+        "en": "A 7045 event names the service; SYSTEM is its runtime identity.",
+        "ms": "Peristiwa 7045 menamakan perkhidmatan; SYSTEM ialah identiti masa jalan."
+      }
+    ],
+    "writeup": {
+      "en": "Explicit credentials and a network logon precede remote service execution. Isolate WS-FIN-07 and FS-02, preserve service metadata and rotate svc.backup after dependency review. SYSTEM in the child process is not the original credential owner.",
+      "ms": "Kelayakan eksplisit dan log masuk rangkaian mendahului pelaksanaan perkhidmatan jauh. Asingkan WS-FIN-07 dan FS-02, simpan metadata perkhidmatan dan tukar kelayakan svc.backup selepas semakan pergantungan. SYSTEM bukan pemilik kelayakan asal."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "backup",
+    "title": {
+      "en": "Before the files go quiet",
+      "ms": "Sebelum fail menjadi senyap"
+    },
+    "level": "Intermediate",
+    "source": "Endpoint + backup audit",
+    "minutes": 30,
+    "brief": {
+      "en": "Backup alerts precede a burst of file renames. Determine the host, responsible account and earliest recovery-inhibition event. No malware or executable commands are supplied.",
+      "ms": "Amaran sandaran mendahului banyak penamaan semula fail. Tentukan hos, akaun dan peristiwa awal yang menghalang pemulihan. Tiada perisian hasad atau arahan boleh laksana dibekalkan."
+    },
+    "logs": [
+      {
+        "id": "BAC-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "BAC-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "BAC-001",
+        "timestamp": "2026-09-14T10:20:03Z",
+        "host": "FS-02",
+        "event": "process_audit",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "process=backup-admin.exe; action=delete_recovery_snapshots; result=success; correlation=IR-44"
+      },
+      {
+        "id": "BAC-002",
+        "timestamp": "2026-09-14T10:20:05Z",
+        "host": "FS-02",
+        "event": "backup_audit",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "snapshot_count_before=7; snapshot_count_after=0; correlation=IR-44"
+      },
+      {
+        "id": "BAC-003",
+        "timestamp": "2026-09-14T10:20:22Z",
+        "host": "FS-02",
+        "event": "file_rename",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "path=Finance/budget.xlsx; new_suffix=.locked; count=124; correlation=IR-44"
+      },
+      {
+        "id": "BAC-004",
+        "timestamp": "2026-09-14T10:20:25Z",
+        "host": "FS-02",
+        "event": "edr_alert",
+        "user": "svc.backup",
+        "source_ip": "10.18.7.14",
+        "detail": "rule=mass_file_change; action=blocked; correlation=IR-44"
+      },
+      {
+        "id": "BAC-005",
+        "timestamp": "2026-09-14T10:21:10Z",
+        "host": "BACKUP-01",
+        "event": "backup_audit",
+        "user": "svc.offline",
+        "source_ip": "10.18.8.9",
+        "detail": "vault=offline-weekly; status=unmodified; copies=3"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which host lost local recovery snapshots?",
+          "ms": "Hos manakah kehilangan petikan pemulihan setempat?"
+        },
+        "answers": [
+          "FS-02"
+        ],
+        "explanation": {
+          "en": "The before/after snapshot count is recorded on FS-02.",
+          "ms": "Kiraan petikan sebelum dan selepas direkodkan pada FS-02."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which account initiated the activity?",
+          "ms": "Akaun manakah memulakan aktiviti?"
+        },
+        "answers": [
+          "svc.backup"
+        ],
+        "explanation": {
+          "en": "Both process and backup audit attribute the action to svc.backup.",
+          "ms": "Audit proses dan sandaran mengaitkan tindakan dengan svc.backup."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "When did recovery inhibition begin (HH:MM:SS UTC)?",
+          "ms": "Bilakah halangan pemulihan bermula (HH:MM:SS UTC)?"
+        },
+        "answers": [
+          "10:20:03"
+        ],
+        "explanation": {
+          "en": "The successful delete_recovery_snapshots audit precedes the count change.",
+          "ms": "Audit delete_recovery_snapshots yang berjaya mendahului perubahan kiraan."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Follow correlation IR-44 across event sources.",
+        "ms": "Ikuti korelasi IR-44 merentas sumber peristiwa."
+      },
+      {
+        "en": "The earliest destructive action precedes mass_file_change.",
+        "ms": "Tindakan merosakkan paling awal mendahului mass_file_change."
+      }
+    ],
+    "writeup": {
+      "en": "Local snapshots were removed before mass renaming. Contain affected systems, preserve evidence and validate offline backups before restoration. The block event does not prove every earlier write was prevented; the offline vault remains a recovery lead.",
+      "ms": "Petikan setempat dipadam sebelum penamaan semula besar-besaran. Bendung sistem terjejas, simpan bukti dan sahkan sandaran luar talian sebelum pemulihan. Peristiwa sekatan tidak membuktikan semua penulisan terdahulu dicegah."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "dns",
+    "title": {
+      "en": "The long questions",
+      "ms": "Pertanyaan yang panjang"
+    },
+    "level": "Advanced",
+    "source": "DNS resolver + endpoint inventory",
+    "minutes": 30,
+    "brief": {
+      "en": "A resolver reports unusual subdomain lengths. Correlate the requesting host and destination, and quantify the suspicious TXT requests without assuming their contents are decoded.",
+      "ms": "Penyelesai DNS melaporkan panjang subdomain luar biasa. Hubungkan hos peminta dan destinasi, serta kira pertanyaan TXT mencurigakan tanpa menganggap kandungannya telah dinyahkod."
+    },
+    "logs": [
+      {
+        "id": "DNS-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "DNS-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "DNS-001",
+        "timestamp": "2026-09-14T11:00:00Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.9.23",
+        "detail": "type=A; query=updates.vendor.example; response=192.0.2.21"
+      },
+      {
+        "id": "DNS-002",
+        "timestamp": "2026-09-14T11:01:02Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.9.23",
+        "detail": "type=TXT; query=chunk001-aGVsbG8.telemetry-sync.example; bytes=412"
+      },
+      {
+        "id": "DNS-003",
+        "timestamp": "2026-09-14T11:01:04Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.9.23",
+        "detail": "type=TXT; query=chunk002-d29ybGQ.telemetry-sync.example; bytes=408"
+      },
+      {
+        "id": "DNS-004",
+        "timestamp": "2026-09-14T11:01:06Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.9.23",
+        "detail": "type=TXT; query=chunk003-ZGF0YQ.telemetry-sync.example; bytes=416"
+      },
+      {
+        "id": "DNS-005",
+        "timestamp": "2026-09-14T11:01:08Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.9.23",
+        "detail": "type=TXT; query=chunk004-ZW5k.telemetry-sync.example; bytes=404"
+      },
+      {
+        "id": "DNS-006",
+        "timestamp": "2026-09-14T11:02:00Z",
+        "host": "CMDB-01",
+        "event": "inventory",
+        "user": "asset.sync",
+        "source_ip": "10.18.9.23",
+        "detail": "address=10.18.9.23; hostname=WS-RES-04; owner=research.lab"
+      },
+      {
+        "id": "DNS-007",
+        "timestamp": "2026-09-14T11:02:30Z",
+        "host": "DNS-01",
+        "event": "dns_query",
+        "user": "resolver",
+        "source_ip": "10.18.3.22",
+        "detail": "type=TXT; query=_dmarc.university.example; bytes=83"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which endpoint originated the suspicious requests?",
+          "ms": "Titik akhir manakah menghantar pertanyaan mencurigakan?"
+        },
+        "answers": [
+          "WS-RES-04"
+        ],
+        "explanation": {
+          "en": "Inventory maps 10.18.9.23 to WS-RES-04.",
+          "ms": "Inventori memetakan 10.18.9.23 kepada WS-RES-04."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "What is the suspicious parent domain?",
+          "ms": "Apakah domain induk yang mencurigakan?"
+        },
+        "answers": [
+          "telemetry-sync.example"
+        ],
+        "explanation": {
+          "en": "Four sequenced labels share telemetry-sync.example.",
+          "ms": "Empat label berurutan berkongsi telemetry-sync.example."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "How many suspicious TXT requests are shown?",
+          "ms": "Berapa banyak pertanyaan TXT mencurigakan ditunjukkan?"
+        },
+        "answers": [
+          "4"
+        ],
+        "explanation": {
+          "en": "Count only the four sequenced TXT queries, excluding DMARC.",
+          "ms": "Kira hanya empat pertanyaan TXT berurutan, kecuali DMARC."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Search telemetry-sync and compare the query type.",
+        "ms": "Cari telemetry-sync dan bandingkan jenis pertanyaan."
+      },
+      {
+        "en": "Use the inventory event to translate the source address into a hostname.",
+        "ms": "Gunakan peristiwa inventori untuk menukar alamat sumber kepada nama hos."
+      }
+    ],
+    "writeup": {
+      "en": "The sequenced, high-volume labels warrant a DNS-tunneling investigation. Block the parent domain in the lab, isolate the source and preserve endpoint telemetry. These fixtures demonstrate a pattern, not proof of a particular stolen document.",
+      "ms": "Label berurutan dengan volum tinggi memerlukan siasatan terowong DNS. Sekat domain induk dalam makmal, asingkan sumber dan simpan telemetri titik akhir. Data ini menunjukkan corak, bukan bukti dokumen tertentu dicuri."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "cloud",
+    "title": {
+      "en": "A key outside the lab",
+      "ms": "Kunci di luar makmal"
+    },
+    "level": "Advanced",
+    "source": "Normalized CloudTrail-style audit",
+    "minutes": 30,
+    "brief": {
+      "en": "A research storage key appears from an unfamiliar address. Trace the principal, object access and policy change. These are normalized synthetic events, not raw AWS CloudTrail exports.",
+      "ms": "Kunci storan penyelidikan muncul dari alamat asing. Jejaki prinsipal, akses objek dan perubahan dasar. Ini peristiwa sintetik ternormal, bukan eksport AWS CloudTrail mentah."
+    },
+    "logs": [
+      {
+        "id": "CLO-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "CLO-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "CLO-001",
+        "timestamp": "2026-09-14T12:04:00Z",
+        "host": "AWS-AUDIT",
+        "event": "GetCallerIdentity",
+        "user": "research-uploader",
+        "source_ip": "203.0.113.62",
+        "detail": "accessKeyId=AKIAEXAMPLELAB01; account=000000000000; region=ap-southeast-1"
+      },
+      {
+        "id": "CLO-002",
+        "timestamp": "2026-09-14T12:04:04Z",
+        "host": "AWS-AUDIT",
+        "event": "ListBuckets",
+        "user": "research-uploader",
+        "source_ip": "203.0.113.62",
+        "detail": "accessKeyId=AKIAEXAMPLELAB01; result=success"
+      },
+      {
+        "id": "CLO-003",
+        "timestamp": "2026-09-14T12:04:10Z",
+        "host": "AWS-AUDIT",
+        "event": "GetObject",
+        "user": "research-uploader",
+        "source_ip": "203.0.113.62",
+        "detail": "bucket=lab-research-archive; key=exports/participant-summary.csv; result=success"
+      },
+      {
+        "id": "CLO-004",
+        "timestamp": "2026-09-14T12:05:20Z",
+        "host": "AWS-AUDIT",
+        "event": "PutBucketPolicy",
+        "user": "research-uploader",
+        "source_ip": "203.0.113.62",
+        "detail": "bucket=lab-research-archive; principal=*; result=AccessDenied; blockPublicAccess=true"
+      },
+      {
+        "id": "CLO-005",
+        "timestamp": "2026-09-14T12:06:00Z",
+        "host": "AWS-AUDIT",
+        "event": "GetObject",
+        "user": "research-uploader",
+        "source_ip": "10.18.2.10",
+        "detail": "bucket=lab-research-archive; key=public/readme.txt; approved_runner=true"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which IAM principal was used from the unfamiliar address?",
+          "ms": "Prinsipal IAM manakah digunakan dari alamat asing?"
+        },
+        "answers": [
+          "research-uploader"
+        ],
+        "explanation": {
+          "en": "GetCallerIdentity and object access identify research-uploader.",
+          "ms": "GetCallerIdentity dan akses objek mengenal pasti research-uploader."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which object key was read successfully?",
+          "ms": "Kunci objek manakah berjaya dibaca?"
+        },
+        "answers": [
+          "exports/participant-summary.csv"
+        ],
+        "explanation": {
+          "en": "The successful external GetObject names that object.",
+          "ms": "GetObject luar yang berjaya menamakan objek tersebut."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "What was the result of PutBucketPolicy?",
+          "ms": "Apakah hasil PutBucketPolicy?"
+        },
+        "answers": [
+          "AccessDenied"
+        ],
+        "explanation": {
+          "en": "The policy write failed; do not report a public bucket as established fact.",
+          "ms": "Penulisan dasar gagal; jangan laporkan baldi awam sebagai fakta."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Separate read success from attempted policy change.",
+        "ms": "Bezakan kejayaan membaca daripada percubaan mengubah dasar."
+      },
+      {
+        "en": "A denied policy change does not undo earlier successful GetObject access.",
+        "ms": "Perubahan dasar yang ditolak tidak membatalkan akses GetObject terdahulu."
+      }
+    ],
+    "writeup": {
+      "en": "A key was used to read an object from an unapproved source. The attempted public policy failed. Revoke the exposed key, review object-access logs, scope affected data and migrate to short-lived roles. Do not infer successful public exposure from an attempted API call.",
+      "ms": "Kunci digunakan untuk membaca objek dari sumber tidak diluluskan. Percubaan dasar awam gagal. Batalkan kunci terdedah, semak log akses objek, tentukan skop data dan beralih kepada peranan sementara."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "export",
+    "title": {
+      "en": "The after-hours archive",
+      "ms": "Arkib selepas waktu kerja"
+    },
+    "level": "Intermediate",
+    "source": "File audit + DLP",
+    "minutes": 30,
+    "brief": {
+      "en": "A large archive is written after hours. Find the user, destination device and confirmed byte count, while distinguishing a blocked upload from a completed copy.",
+      "ms": "Arkib besar ditulis selepas waktu kerja. Cari pengguna, peranti destinasi dan jumlah bait yang disahkan, sambil membezakan muat naik disekat daripada salinan selesai."
+    },
+    "logs": [
+      {
+        "id": "EXP-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "EXP-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "EXP-001",
+        "timestamp": "2026-09-14T18:31:11Z",
+        "host": "WS-HR-02",
+        "event": "archive_created",
+        "user": "farid",
+        "source_ip": "10.18.6.11",
+        "detail": "path=C:/Temp/staff-export.zip; size=52428800"
+      },
+      {
+        "id": "EXP-002",
+        "timestamp": "2026-09-14T18:32:02Z",
+        "host": "WS-HR-02",
+        "event": "device_mount",
+        "user": "farid",
+        "source_ip": "10.18.6.11",
+        "detail": "device=USB-LAB-8831; volume=E:; approved=false"
+      },
+      {
+        "id": "EXP-003",
+        "timestamp": "2026-09-14T18:33:14Z",
+        "host": "WS-HR-02",
+        "event": "file_copy",
+        "user": "farid",
+        "source_ip": "10.18.6.11",
+        "detail": "source=C:/Temp/staff-export.zip; destination=E:/staff-export.zip; bytes=52428800; result=success"
+      },
+      {
+        "id": "EXP-004",
+        "timestamp": "2026-09-14T18:34:00Z",
+        "host": "DLP-01",
+        "event": "upload_blocked",
+        "user": "farid",
+        "source_ip": "10.18.6.11",
+        "detail": "host=storage-share.example; file=staff-export.zip; bytes_sent=0; policy=HR-export"
+      },
+      {
+        "id": "EXP-005",
+        "timestamp": "2026-09-14T18:35:09Z",
+        "host": "WS-HR-02",
+        "event": "device_unmount",
+        "user": "farid",
+        "source_ip": "10.18.6.11",
+        "detail": "device=USB-LAB-8831"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "Which user copied the archive?",
+          "ms": "Pengguna manakah menyalin arkib?"
+        },
+        "answers": [
+          "farid"
+        ],
+        "explanation": {
+          "en": "The successful file_copy identifies farid.",
+          "ms": "file_copy yang berjaya mengenal pasti farid."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which device received it?",
+          "ms": "Peranti manakah menerimanya?"
+        },
+        "answers": [
+          "USB-LAB-8831"
+        ],
+        "explanation": {
+          "en": "Mount evidence links E: to USB-LAB-8831.",
+          "ms": "Bukti pemasangan mengaitkan E: kepada USB-LAB-8831."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "How many bytes were confirmed copied?",
+          "ms": "Berapa bait disahkan disalin?"
+        },
+        "answers": [
+          "52428800"
+        ],
+        "explanation": {
+          "en": "file_copy reports 52428800 bytes and success; the later upload was blocked.",
+          "ms": "file_copy melaporkan 52428800 bait dan berjaya; muat naik kemudian disekat."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Correlate the destination drive with the device mount.",
+        "ms": "Hubungkan pemacu destinasi dengan pemasangan peranti."
+      },
+      {
+        "en": "Use successful file_copy, not the upload_blocked event, for the byte count.",
+        "ms": "Gunakan file_copy berjaya untuk kiraan bait."
+      }
+    ],
+    "writeup": {
+      "en": "The logs support a completed removable-media copy, while the cloud upload was blocked. Preserve the endpoint and device records, involve the authorized investigation team and establish business context. Technical evidence alone does not prove malicious intent.",
+      "ms": "Log menyokong salinan media boleh alih yang selesai, manakala muat naik awan disekat. Simpan rekod titik akhir dan peranti, libatkan pasukan siasatan yang dibenarkan dan sahkan konteks perniagaan. Bukti teknikal sahaja tidak membuktikan niat jahat."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  },
+  {
+    "id": "web",
+    "title": {
+      "en": "A new file in uploads",
+      "ms": "Fail baharu dalam uploads"
+    },
+    "level": "Advanced",
+    "source": "Web access + process telemetry",
+    "minutes": 30,
+    "brief": {
+      "en": "An upload endpoint accepts a script and the web worker starts an unexpected process. Reconstruct the upload path and execution evidence. Requests are inert records; no vulnerable service is running.",
+      "ms": "Titik muat naik menerima skrip dan pekerja web memulakan proses luar jangka. Bina semula laluan muat naik dan bukti pelaksanaan. Permintaan hanyalah rekod lengai; tiada perkhidmatan rentan berjalan."
+    },
+    "logs": [
+      {
+        "id": "WEB-B01",
+        "timestamp": "2026-09-14T08:02:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B02",
+        "timestamp": "2026-09-14T08:03:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B03",
+        "timestamp": "2026-09-14T08:04:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B04",
+        "timestamp": "2026-09-14T08:05:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B05",
+        "timestamp": "2026-09-14T08:06:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B06",
+        "timestamp": "2026-09-14T08:07:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B07",
+        "timestamp": "2026-09-14T08:08:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B08",
+        "timestamp": "2026-09-14T08:09:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B09",
+        "timestamp": "2026-09-14T08:10:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B10",
+        "timestamp": "2026-09-14T08:11:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B11",
+        "timestamp": "2026-09-14T08:12:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B12",
+        "timestamp": "2026-09-14T08:13:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-B13",
+        "timestamp": "2026-09-14T08:14:00Z",
+        "host": "WS-LIB-03",
+        "event": "4624",
+        "user": "library.kiosk",
+        "source_ip": "10.18.3.22",
+        "detail": "LogonType=5; service=LibraryIndex; expected scheduled activity"
+      },
+      {
+        "id": "WEB-B14",
+        "timestamp": "2026-09-14T08:15:00Z",
+        "host": "WS-LIB-03",
+        "event": "heartbeat",
+        "user": "svc.health",
+        "source_ip": "10.18.3.22",
+        "detail": "scheduled health check; status=ok"
+      },
+      {
+        "id": "WEB-001",
+        "timestamp": "2026-09-14T14:10:01Z",
+        "host": "WEB-01",
+        "event": "http_request",
+        "user": "anonymous",
+        "source_ip": "198.51.100.91",
+        "detail": "method=POST; path=/upload; filename=receipt.php; status=201; request_id=RQ-81"
+      },
+      {
+        "id": "WEB-002",
+        "timestamp": "2026-09-14T14:10:02Z",
+        "host": "WEB-01",
+        "event": "file_write",
+        "user": "www-data",
+        "source_ip": "198.51.100.91",
+        "detail": "path=/srv/site/uploads/receipt.php; request_id=RQ-81"
+      },
+      {
+        "id": "WEB-003",
+        "timestamp": "2026-09-14T14:10:05Z",
+        "host": "WEB-01",
+        "event": "http_request",
+        "user": "anonymous",
+        "source_ip": "198.51.100.91",
+        "detail": "method=GET; path=/uploads/receipt.php; status=200; request_id=RQ-82"
+      },
+      {
+        "id": "WEB-004",
+        "timestamp": "2026-09-14T14:10:05Z",
+        "host": "WEB-01",
+        "event": "process_start",
+        "user": "www-data",
+        "source_ip": "198.51.100.91",
+        "detail": "parent=php-fpm; child=sh; request_id=RQ-82; action=environment_discovery; command_redacted=true"
+      },
+      {
+        "id": "WEB-005",
+        "timestamp": "2026-09-14T14:10:08Z",
+        "host": "WEB-01",
+        "event": "network_connect",
+        "user": "www-data",
+        "source_ip": "198.51.100.91",
+        "detail": "destination=203.0.113.29; port=443; request_id=RQ-82; action=blocked"
+      },
+      {
+        "id": "WEB-006",
+        "timestamp": "2026-09-14T14:11:00Z",
+        "host": "WEB-01",
+        "event": "http_request",
+        "user": "student",
+        "source_ip": "10.18.3.41",
+        "detail": "method=POST; path=/upload; filename=diagram.png; status=201; request_id=RQ-83"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": {
+          "en": "What was the uploaded script filename?",
+          "ms": "Apakah nama fail skrip yang dimuat naik?"
+        },
+        "answers": [
+          "receipt.php"
+        ],
+        "explanation": {
+          "en": "RQ-81 links the upload to the file write.",
+          "ms": "RQ-81 mengaitkan muat naik dengan penulisan fail."
+        },
+        "points": 50
+      },
+      {
+        "id": "q2",
+        "prompt": {
+          "en": "Which parent process spawned the unexpected shell?",
+          "ms": "Proses induk manakah melahirkan shell luar jangka?"
+        },
+        "answers": [
+          "php-fpm"
+        ],
+        "explanation": {
+          "en": "The process_start event names php-fpm as parent.",
+          "ms": "Peristiwa process_start menyatakan php-fpm sebagai induk."
+        },
+        "points": 50
+      },
+      {
+        "id": "q3",
+        "prompt": {
+          "en": "Which request ID links the GET to execution?",
+          "ms": "ID permintaan manakah mengaitkan GET dengan pelaksanaan?"
+        },
+        "answers": [
+          "RQ-82"
+        ],
+        "explanation": {
+          "en": "Both GET and process_start share RQ-82.",
+          "ms": "GET dan process_start berkongsi RQ-82."
+        },
+        "points": 50
+      }
+    ],
+    "hints": [
+      {
+        "en": "Correlate upload, file write and GET by request identifiers.",
+        "ms": "Hubungkan muat naik, penulisan fail dan GET mengikut ID permintaan."
+      },
+      {
+        "en": "HTTP 200 alone is weaker evidence than a matching process_start.",
+        "ms": "HTTP 200 sahaja lebih lemah daripada process_start yang sepadan."
+      }
+    ],
+    "writeup": {
+      "en": "The process event corroborates server-side execution after upload. Quarantine the application, preserve file and access logs, remove execution permission from upload storage and validate file types. A blocked outbound connection does not negate the local execution.",
+      "ms": "Peristiwa proses mengesahkan pelaksanaan pada pelayan selepas muat naik. Kuarantin aplikasi, simpan fail dan log akses, buang kebenaran pelaksanaan daripada storan muat naik dan sahkan jenis fail. Sambungan keluar disekat tidak menafikan pelaksanaan setempat."
+    },
+    "provenance": "Original synthetic training scenario; generated 2026-10-19. Not real incident telemetry."
+  }
+]

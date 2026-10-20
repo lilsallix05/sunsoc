@@ -1,0 +1,1 @@
+{"mappings":{"properties":{"@timestamp":{"type":"date"},"timestamp":{"type":"date"},"id":{"type":"keyword"},"case_id":{"type":"keyword"},"host":{"type":"keyword"},"event":{"type":"keyword"},"user":{"type":"keyword"},"source_ip":{"type":"ip"},"detail":{"type":"text"},"synthetic":{"type":"boolean"}}}}

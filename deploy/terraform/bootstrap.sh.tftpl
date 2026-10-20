@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+dnf install -y docker
+systemctl enable --now docker
+install -m 700 -d /opt/sunsoc
+# Token generated on the host, never placed in Terraform state.
+umask 077
+printf 'SUNSOC_FACILITATOR_TOKEN=' > /opt/sunsoc/runtime.env
+od -An -N32 -tx1 /dev/urandom | tr -d ' \n' >> /opt/sunsoc/runtime.env
+printf '\n' >> /opt/sunsoc/runtime.env
+docker pull '${image}'
+docker run -d --name sunsoc --restart unless-stopped --read-only --cap-drop ALL --security-opt no-new-privileges --tmpfs /tmp:rw,size=16m --env-file /opt/sunsoc/runtime.env -p 127.0.0.1:4891:4891 -v sunsoc-data:/app/instance '${image}'
