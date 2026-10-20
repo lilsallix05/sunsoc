@@ -4,6 +4,10 @@ A click is not a compromise. SunSOC is a local investigation range where learner
 
 ![Investigation desk: the invoice case filtered to nur.aisyah, with 50 of 150 points scored](docs/screenshots/hero.jpg)
 
+## The attack
+
+Every case replays an attacker's path that the learner has to reconstruct from logs: phishing to account takeover, password spraying, lateral movement over a remote service, backup deletion before ransomware, DNS tunnelling, misuse of a leaked cloud key, after-hours data copying and a web shell dropped into an upload folder. The point is to tell what the attacker actually achieved from what they only attempted.
+
 ## What it does
 
 - Eight original synthetic incidents (157 log events, 24 scored findings) covering phishing, password spraying, lateral movement, backup deletion, DNS tunnelling, cloud-key misuse, data copying and a web shell.
